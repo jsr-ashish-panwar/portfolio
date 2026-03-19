@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -20,27 +21,30 @@ export default function About() {
 
                     <div className="grid lg:grid-cols-3 gap-8 md:gap-12 items-center">
                         <div className="lg:col-span-1 max-w-sm mx-auto lg:max-w-none">
-                            <div className="relative group">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                                <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
+                            <Link href="/links" className="block relative group cursor-pointer">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-500 group-hover:duration-200"></div>
+                                <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all duration-500 group-active:scale-[0.98]">
                                     <img
                                         src="/profile.jpeg"
                                         alt="Ashish Panwar"
-                                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                                     />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
+                                        <span className="text-white text-xs font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">View Links</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
 
                         <div className="lg:col-span-2 space-y-8">
                             <div className="space-y-6">
                                 <p className="text-base md:text-lg text-white/80 leading-relaxed text-center lg:text-left">
                                     I'm a transition from a Bachelor of Computer Applications (BCA) student at{" "}
-                                    <span className="text-neon-purple font-semibold">Vidya Knowledge Park</span> to a
+                                    <span className="text-neon-purple font-semibold">Vidya University</span> to a
                                     professional video editor and content creator.
                                 </p>
                                 <p className="text-base md:text-lg text-white/80 leading-relaxed text-center lg:text-left">
-                                    My unique edge lies in bridging the gap between <span className="text-neon-cyan italic">code and cinema</span>.
+                                    My unique edge lies in bridging the gap between <span className="text-neon-cyan italic">CODE AND CREATIVITY</span>.
                                     By combining technical skills in HTML, CSS, and Python with creative mastery in Videos and Photos editing, I create digital experiences that are both functional and visually stunning.
                                 </p>
                             </div>

@@ -46,20 +46,22 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-col xs:flex-row gap-4 justify-center px-6">
-                        <motion.button
+                        <motion.a
+                            href="#work"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 sm:py-3 rounded-full bg-neon-purple text-white font-semibold neon-glow-purple transition-all w-full xs:w-auto"
+                            className="px-8 py-4 sm:py-3 rounded-full bg-neon-purple text-white font-semibold neon-glow-purple transition-all w-full xs:w-auto text-center cursor-pointer"
                         >
                             View Work
-                        </motion.button>
-                        <motion.button
+                        </motion.a>
+                        <motion.a
+                            href="#contact"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 sm:py-3 rounded-full border border-neon-cyan/50 text-neon-cyan font-semibold hover:bg-neon-cyan/10 transition-all w-full xs:w-auto"
+                            className="px-8 py-4 sm:py-3 rounded-full border border-neon-cyan/50 text-neon-cyan font-semibold hover:bg-neon-cyan/10 transition-all w-full xs:w-auto text-center cursor-pointer"
                         >
                             Contact Me
-                        </motion.button>
+                        </motion.a>
                     </div>
                 </motion.div>
             </div>
